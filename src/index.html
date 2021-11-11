@@ -1,127 +1,31 @@
 <!DOCTYPE html>
-<html class="page">
-
+<html class="page" lang="ru">
 <head>
     <title>Test project</title>
     <meta charset="utf-8">
-    <meta name="author" content="Nikita Olimpiev">
+    <meta name="author" content="Nikolai Zhukov">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/index.css">
 </head>
-
-<body>
-    <header class="header">
-        <div class="header__logo">NewsExplorer</div>
-        <div class="header__pages-container">
-            <i class="fa fa-bars burger"></i>
-            <div class="link">Главная</div>
-            <div class="link">Сохраненные статьи</div>
-            <div class="link__logout">Грета <i class="fa fa-sign-out"></i></div>
-        </div>
-    </header>
-    <div class="top">
-        <div class="top__title">Сохраненные статьи</div>
-        <div class="top__subtitle">Грета, у вас 5 сохранённых статей</div>
-        <div class="top__keywords">По ключевым словам: <b>Природа, Тайга</b> и <b>2-м другим</b></div>
-    </div>
-    <div class="hero">
-        
-        <div class="hero__content row show-grid">
-            <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
-                <div class="card__type">Природа</div>
-                <div class="cart__delete-icon"><i class="fa fa-trash"></i></div>
-                <img src="https://pikaplant.com/wp-content/uploads/pikaplant-musa-acuminata-coco-fibre-1200x675.jpg"
-                    alt="news image" />
-
-                <div class="card__date">2 августа, 2019</div>
-                <div class="card__title">Национальное достояние - парки</div>
-                <div class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
-                    приобщиться к природе.</div>
-                <div class="card__source-container">
-                    <div class="card__source">ДЗЕН</div>
-                </div>
-
-            </section>
-
-            <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
-                <div class="card__type">Природа</div>
-                <div class="cart__delete-icon"><i class="fa fa-trash"></i></div>
-                <img src="http://ic.pics.livejournal.com/shpilenok/17995238/746201/746201_original.jpg"
-                    alt="news image" />
-
-                <div class="card__date">2 августа, 2019</div>
-                <div class="card__title">Лесные огоньки: история одной фотографии</div>
-                <div class="card__description">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
-                    из местных чудес природы.</div>
-                <div class="card__source-container">
-                    <div class="card__source">АФИША</div>
-                </div>
-
-            </section>
-
-            <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
-                <div class="card__type">Тайга</div>
-                <div class="cart__delete-icon"><i class="fa fa-trash"></i></div>
-                <img src="https://avatars.mds.yandex.net/get-zen_doc/1718701/pub_5debeb0cc7e50c00b8dbe00b_5df65ebc0be00a00b0c21f5d/scale_1200"
-                    alt="news image" />
-
-                <div class="card__date">2 августа, 2019</div>
-                <div class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</div>
-                <div class="card__description">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</div>
-                <div class="card__source-container">
-                    <div class="card__source">МЕДИАЗОНА</div>
-                </div>
-
-            </section>
-
-            <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
-                <div class="card__type">Искусство</div>
-                <div class="cart__delete-icon"><i class="fa fa-trash"></i></div>
-                <img src="https://v-kurse.ru/upload/medialibrary/145/145b7dea8de4cd9f97b4c727951284b7.jpg"
-                    alt="news image" />
-
-                <div class="card__date">2 августа, 2019</div>
-                <div class="card__title">Юрий Лапшин - выставка работ</div>
-                <div class="card__description">Новый работы известного художника авангардиста.</div>
-                <div class="card__source-container">
-                    <div class="card__source">ВКУРСЕ</div>
-                </div>
-
-            </section>
-
-            <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">
-                <div class="card__type">Природа</div>
-                <div class="cart__delete-icon"><i class="fa fa-trash"></i></div>
-                <img src="https://pikaplant.com/wp-content/uploads/pikaplant-musa-acuminata-coco-fibre-1200x675.jpg"
-                    alt="news image" />
-
-                <div class="card__date">2 августа, 2019</div>
-                <div class="card__title">Национальное достояние - парки</div>
-                <div class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
-                    приобщиться к природе.</div>
-                <div class="card__source-container">
-                    <div class="card__source">ДЗЕН</div>
-                </div>
-
-            </section>
-
-        </div>
-    </div>
-
-    <footer>
-        <div class="copyright">© 2020 Supersite, Powered by News API</div>
-        <div class="footer__container">
-            <div class="footer__container-links">
-                <div class="footer__link">Главная</div>
-                <div class="footer__link">Яндекс.Практикум</div>
-            </div>
-            <div class="footer__icons"><i class="fa fa-github"></i><i class="fa fa-facebook-official"></i></div>
-        </div>
-    </footer>
-
+<body class="page__body">
+    <h1 class="page__logo logo">
+        Testing deploy on heroku
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <picture>
+        <source srcset="https://itmo.ru/file/stat/482/slogans05.png" media="(min-width: 1063px)">
+            <img src="https://itmo.ru/file/pages/213/logo-mail.PNG" alt="Логотип ИТМО">
     </picture>
 </body>
-
 </html>
