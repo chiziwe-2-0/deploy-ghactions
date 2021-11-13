@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1232px;
+    margin:  0 auto;
+}
+
+/* Head */
+
+header {
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+    .headerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+   
+
+    .logoFlex {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        display: flex;
+        align-items: center;
+        /* main/primary */
+        color: #1A1B22;    
+    }
+
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainPageFlex { 
+        font-family: Roboto;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        margin-right: 34px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        /* identical to box height, or 133% */
+        text-align: center;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    .savedFlex { 
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        height: 80px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-right: 32px;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    .underlineFlex {   
+        border-bottom: solid 2px #1A1B22;
+    }
+
+    .logoutFlex {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        height: 48px;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .logout img {
+        margin-left: 5px;
+    }
+
+/* Middle Section */
+
+.middle p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    color: rgba(26, 27, 34, 0.5);
+    margin-top: 40px;
+}
+
+.middle h1 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-top: 28px;
+}
+
+.middle div {
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+/* Content Section */
+
+.contentFlex {
+    width: 100%;
+    background: #F5F6F7;
+    padding-top: 62px;
+}
+
+.cardFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 62px;
+}
+ 
+/* Card Section */
+
+.card {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    margin: 8px;
+    position: relative;
+    height: 576px;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.cardFlexContainer .card:nth-child(3) {
+    margin-right: 0;
+}
+.cardFlexContainer .card:nth-child(1) {
+    margin-left: 0;
+}
+.cardFlexContainer .card:nth-child(4) {
+    margin-left: 0;
+}
+
+    .image {
+        max-width: 400px;
+        max-height: 272px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .nameOnCardFlex {
+        display:flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        right: 24px;
+    }
+
+    .categoryFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 88px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        text-align: center;
+        color: #000000;
+
+    }
+
+    .deleteFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .deleteFlex img {
+        height: 24px;
+        width: 24px;
+    }
+ 
+/* Text on cards Section */
+
+.date {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    margin-top: 12px;
+    margin-left: 24px;
+    /* identical to box height, or 133% */   
+    display: flex;
+    align-items: center;  
+    /* simulator/gray/text */ 
+    color: #B6BCBF;
+}
+
+.title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    /* or 115% */
+    /* main/primary */
+    color: #1A1B22;
+    margin-top: 12px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    /* main/primary */
+    color: #1A1B22;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.source {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    /* simulator/gray/text */
+    color: #B6BCBF;
+    position: absolute;  
+    bottom: 24px;
+    left: 24px;
+}
+
+.removeFromSavedInner{
+    display: flex;
+}
+
+.blackDelete img {
+    filter: brightness(0%)
+}
+
+.deleteCard {
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 159px;
+    margin-right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.deleteCardFlag {
+    display: flex;
+}
+
+/* Footer Section */
+
+.footerText {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    /* simulator/gray/text */
+    color: #B6BCBF;
+
+}
