@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+    <head>
+        <title>Task4</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Nikita Olimpiev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/flex/flex.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+
+    <header>
+        <div class="container">
+            <div class="headerFlex">
+                <div class="logoFlex">NewsExplorer</div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a>Главная</a>
+                        </li>
+                        <li class="active">
+                            <a>Сохранённые статьи</a>
+                        </li>
+                        <li>
+                            <a>
+                                <p>Грета</p>
+                                <img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/65ce19022fd85848044f3cfbf82bf5d3784bfc6d/src/images/logout.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/98b67a722d4a4831e7d69b81c24c5e4ff327d192/src/images/burger.svg" class="burger">
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="middle">
+            <p>Сохраненные статьи</p>
+            <h1>Грета, у вас 5 <br> сохранённых статей</h1>
+            <div>По ключевым словам: <strong>Природа, Тайга</strong> и <strong>2-м другим</strong></div>
+        </div>
+    </section>
+
+    <section class="contentFlex">
+        <div class="container">
+            <div class="cardFlexContainer">
+
+            <!-- Карточка -->
+                <div class="card">
+                    <img class="image" src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/image_06.jpg?raw=true">
+                    <div class="nameOnCardFlex">
+                        <div class="categoryFlex">Природа</div>
+                            <div class="deleteFlex"><img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/86e2868acc611e73b2e5c19cb64bc17f511ffc37/src/images/trash.svg"></div>
+                    </div>
+
+                    <p class="date">2 августа, 2019</p>
+                    <h2 class="title">Национальное достояние – парки</h2>
+                    <p class="description"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    <p class="source">Дзен</p>
+                </div>
+
+            <!-- Карточка 2 -->
+                <div class="card">
+                    <img class="image" src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/image_01.jpg?raw=true">
+                    <div class="nameOnCardFlex">
+                        <div class="categoryFlex">Природа</div>
+                        <div class="removeFromSavedInner">
+                            <div class="deleteCard deleteCardFlag">Убрать из сохраненных</div>
+                            <div class="blackDelete deleteFlex"><img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/86e2868acc611e73b2e5c19cb64bc17f511ffc37/src/images/trash.svg"></div>  
+                        </div>
+                    </div>
+
+                    <p class="date">2 августа, 2019</p>
+                    <h2 class="title">Лесные огоньки: история одной фотографии</h2>
+                    <p class="description"> Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                        из местных чудес природы.</p>
+                    <p class="source">Афиша</p>
+                </div>
+                
+                
+            <!-- Карточка 3 -->
+                <div class="card">
+                    <img class="image" src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/image_05.jpg?raw=true">
+                    <div class="nameOnCardFlex">
+                        <div class="categoryFlex">Природа</div>
+                            <div class="deleteFlex"><img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/86e2868acc611e73b2e5c19cb64bc17f511ffc37/src/images/trash.svg"></div>
+                    </div>
+
+                    <p class="date">2 августа, 2019</p>
+                    <h2 class="title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                    <p class="description"> Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                    <p class="source">Медиазона</p>
+                </div>
+
+                
+            <!-- Карточка 4 -->
+                <div class="card">
+                    <img class="image" src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/image_06.jpg?raw=true">
+                    <div class="nameOnCardFlex">
+                        <div class="categoryFlex">Природа</div>
+                            <div class="deleteFlex"><img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/86e2868acc611e73b2e5c19cb64bc17f511ffc37/src/images/trash.svg"></div>
+                    </div>
+
+                    <p class="date">2 августа, 2019</p>
+                    <h2 class="title">Национальное достояние – парки</h2>
+                    <p class="description"> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    <p class="source">Дзен</p>
+                </div>
+                
+
+            <!-- Карточка 5 -->
+                <div class="card">
+                    <img class="image" src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/image_01.jpg?raw=true">
+                    <div class="nameOnCardFlex">
+                        <div class="categoryFlex">Природа</div>
+                            <div class="deleteFlex"><img src="https://raw.githubusercontent.com/chiziwe-2-0/deploy-ghactions/86e2868acc611e73b2e5c19cb64bc17f511ffc37/src/images/trash.svg"></div>
+                    </div>
+
+                    <p class="date">2 августа, 2019</p>
+                    <h2 class="title">Лесные огоньки: история одной фотографии</h2>
+                    <p class="description"> Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                        из местных чудес природы.</p>
+                    <p class="source">Афиша</p>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="headerFlex">
+                <div class="footerText">© 2020 Supersite, Powered by News API</div>
+                <nav class='menuFlex'>   
+                    <div class="mainPageFlex">Главная</div>
+                    <div class="savedFlex">Яндекс.Практикум</div>
+                    <img src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/github.png?raw=true"/> 
+                    <img src="https://github.com/chiziwe-2-0/deploy-ghactions/blob/main/src/images/fb.png?raw=true"/>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

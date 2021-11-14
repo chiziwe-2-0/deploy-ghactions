@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #1A1B22;
+    margin: unset;
+}
+
+a {
+    color: #1A1B22;
+    text-decoration: unset;
+}
+
+li {
+    display: inline-block;
+}
+
+/* Head */
+
+header {
+    display: grid;
+    max-width: 1232px;
+    margin:  0 auto;
+    height: 80px;
+    padding: 0 7.22%;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+    .headerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+   
+    .logoFlex {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        display: flex;
+        align-items: center;
+        /* main/primary */
+        color: #1A1B22;    
+    }
+
+    header nav {
+        height: 100%;
+        margin-left: auto;
+    }
+    
+    header nav ul {
+        height: 100%;
+        margin: unset;
+        padding: unset;
+    }
+    
+    header nav ul li {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        height: 57%;
+        margin-top: 19px;
+    }
+    
+    header nav ul li.active {
+        border-bottom: 2px solid #1A1B22;
+    }
+    
+    header nav ul li:nth-child(2) {
+        margin: 0 32px 0 34px;
+    }
+    
+    header nav ul li:last-child {
+        height: 48px;
+        padding: 0 15px 0 19px;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 100px;
+    }
+    
+    header nav ul li:last-child a p {
+        width: 54px;
+        display: inline-block;
+        margin-top: 11px;
+    }
+    
+    header nav ul li:last-child a img {
+        margin-bottom: -7px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+
+/* Middle Section */
+
+.middle {
+    margin: 40px 7.22% 56px;
+}
+
+.middle p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    color: rgba(26, 27, 34, 0.5);
+    max-width: 712px;
+    margin-top: 40px;
+}
+
+.middle div {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 712px;
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+.middle h1 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-top: 28px;
+    max-width: 530px;
+
+}
+/* Content Section */
+
+.contentFlex {
+    background: #F5F6F7;
+    padding: 62px 7.22% 46px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cardFlexContainer {
+    width: 400px;
+    max-width: 400px;
+    min-height: 576px;
+    margin-bottom: 16px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    position: relative;
+}
+
+.cardFlexContainer:nth-child(3n-1) {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.image {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    align-items: center;
+    justify-items: end;
+}
+
+.nameOnCardFlex {
+    padding: 8px 12px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.deleteFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.deleteFlex img {
+    height: 24px;
+    width: 24px;
+}
+.removeFromSavedInner{
+    display: flex;
+}
+
+.blackDelete img {
+    filter: brightness(0%)
+}
+
+.deleteCard {
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 159px;
+    margin-right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.deleteCardFlag {
+    display: flex;
+}
+
+.cardInformation {
+    padding: 20px 24px 24px;
+}
+
+.date {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+}
+
+.cardInformation h2 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-bottom: 18px;
+}
+
+.source {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+
+    position: absolute;
+    bottom: 24px;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 0 7.22%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footerText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+
+    margin-top: 32px;
+    margin-bottom: 26px;
+}
+
+.menuFlex {
+    display: inline-block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navLink {
+    display: inline-block;
+}
+
+.navLink a {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.navLink a:first-child {
+    width: 112px;
+}
+
+.navLink a:last-child {
+    width: 192px;
+}
+
+.navSoc {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navSoc a:first-child {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.mob-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: initial;
+        padding: 16px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .saved-articles {
+        margin: 8px 16px 32px;
+    }
+
+    .saved-articles h1 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .saved-articles h2 {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 16px 0;
+    }
+
+    .contentFlex {
+        padding: 24px 16px 14px;
+        grid-template-columns: 100%;
+    }
+
+    .cardFlexContainer {
+        width: initial;
+        max-width: initial;
+        min-height: initial;
+        margin-bottom: 10px;
+    }
+
+    .cardFlexContainer:nth-child(3n-1) {
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .card {
+        top: 16px;
+        left: 16px;
+        right: 16px;
+    }
+
+    .cardInformation {
+        padding: 16px;
+    }
+
+    .cardInformation h2 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .deleteFlex p {
+        display: none;
+    }
+
+    .description {
+        margin-bottom: 8px;
+    }
+
+    .source {
+        position: initial;
+    }
+
+    .footerText {
+        margin-top: 40px;
+        margin-bottom: initial;
+        grid-row: 2;
+    }
+
+    .menuFlex {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .navLink a {
+        text-align: left;
+        line-height: 48px;
+    }
+
+    .navSoc {
+        margin-left: auto;
+    }
+
+    footer {
+        padding: 20px 16px;
+        grid-template-columns: 100%;
+    }
+}

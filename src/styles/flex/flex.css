@@ -3,6 +3,20 @@
     margin: 0;
 }
 
+body {
+    color: #1A1B22;
+    margin: unset;
+}
+
+a {
+    color: #1A1B22;
+    text-decoration: unset;
+}
+
+li {
+    display: inline-block;
+}
+
 .container {
     max-width: 1232px;
     margin:  0 auto;
@@ -11,6 +25,8 @@
 /* Head */
 
 header {
+    height: 80px;
+    padding: 0 7.22%;
     background: #FFFFFF;
     box-shadow: inset 0px -1px 0px #D1D2D6;
 }
@@ -23,7 +39,6 @@ header {
         width: 100%;
     }
    
-
     .logoFlex {
         font-family: Roboto Slab;
         font-style: normal;
@@ -37,95 +52,57 @@ header {
         color: #1A1B22;    
     }
 
-    .menuFlex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    header nav {
+        height: 100%;
+        margin-left: auto;
     }
-
-    .mainPageFlex { 
-        font-family: Roboto;
-        display: flex;
-        height: 80px;
-        align-items: center;
-        margin-right: 34px;
-        font-family: Roboto;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 500;
-        /* identical to box height, or 133% */
-        text-align: center;
-        /* main/primary */
-        color: #1A1B22;
+    
+    header nav ul {
+        height: 100%;
+        margin: unset;
+        padding: unset;
     }
-
-    .savedFlex { 
+    
+    header nav ul li {
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        height: 80px;
-        /* identical to box height, or 133% */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin-right: 32px;
-        /* main/primary */
-        color: #1A1B22;
+        height: 57%;
+        margin-top: 19px;
     }
-
-    .underlineFlex {   
-        border-bottom: solid 2px #1A1B22;
+    
+    header nav ul li.active {
+        border-bottom: 2px solid #1A1B22;
     }
-
-    .logoutFlex {
-        background: #FFFFFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 112px;
+    
+    header nav ul li:nth-child(2) {
+        margin: 0 32px 0 34px;
+    }
+    
+    header nav ul li:last-child {
         height: 48px;
+        padding: 0 15px 0 19px;
         border: 1px solid #1A1B22;
         box-sizing: border-box;
         border-radius: 100px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
+    }
+    
+    header nav ul li:last-child a p {
+        width: 54px;
+        display: inline-block;
+        margin-top: 11px;
+    }
+    
+    header nav ul li:last-child a img {
+        margin-bottom: -7px;
     }
 
-    .logout img {
-        margin-left: 5px;
-    }
-   
-
-    .burgerFlex {
+    .burger {
         display: none;
     }
 
-    @media (max-width: 768px) {
-
-    .burgerFlex {
-        display: flex;
-        background: #FFFFFF;
-        border: none;    }
-
-    .logoutFlex {
-        display: none;
-    }
-
-    .mainPageFlex {
-        display: none;
-    }
-
-    .savedFlex {
-        display: none;
-    }
-
-}
 
 /* Middle Section */
 
@@ -166,35 +143,38 @@ header {
 .cardFlexContainer {
     display: flex;
     flex-wrap: wrap;
+    padding-left: auto;
     padding-bottom: 62px;
+    align-items: center;
 }
  
 /* Card Section */
 
 .card {
-    background: #FFFFFF;
-    box-sizing: border-box;
-    margin: 8px;
-    position: relative;
-    height: 576px;
+
+    width: 400px;
     max-width: 400px;
-    border-radius: 20px;
+    min-height: 576px;
+    margin-bottom: 16px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    position: relative;
+
+
 }
 
-.cardFlexContainer .card:nth-child(3) {
-    margin-right: 0;
+.cardFlexContainer .card:nth-child(3n-1) {
+    margin-left: 16px;
+    margin-right: 16px;
 }
-.cardFlexContainer .card:nth-child(1) {
-    margin-left: 0;
-}
-.cardFlexContainer .card:nth-child(4) {
-    margin-left: 0;
-}
+
 
     .image {
         max-width: 400px;
         max-height: 272px;
-        border-radius: 20px 20px 0 0;
+        border-radius: 16px 16px 0 0;
     }
 
     .nameOnCardFlex {
@@ -344,5 +324,162 @@ header {
     /* identical to box height, or 137% */
     /* simulator/gray/text */
     color: #B6BCBF;
+}
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .mainPageFlex { 
+        font-family: Roboto;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        margin-right: 34px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        /* identical to box height, or 133% */
+        text-align: center;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    .savedFlex { 
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        height: 80px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-right: 32px;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+@media (max-width: 768px) {
+
+    header {
+        height: initial;
+        padding-left: 16px;
+    }
+
+    .logoutFlex {
+        font-size: initial;
+        line-height: initial;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .burger {
+        display: initial;
+        margin-left: auto;
+    }
+    
+    .container .middle {
+        padding-left: 16px;
+    }
+
+    .container p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    
+    .container div {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .cardFlexContainer .card:nth-child(1n-1) {
+        margin-left: 0px;
+    }
+    
+    .cardFlexContainer {
+        width: initial;
+        max-width: initial;
+        min-height: initial;
+        margin-bottom: 10px;
+        padding-left: 16px;
+    }
+
+    .menuFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainPageFlex { 
+        font-family: Roboto;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        margin-right: 34px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        /* identical to box height, or 133% */
+        text-align: center;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    .savedFlex { 
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        height: 80px;
+        /* identical to box height, or 133% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-right: 32px;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    .cardFlexContainer {
+        height: initial;
+        width: 100%;
+    }
+
+    .deleteCard {
+        display: none;
+    }
+
+    .blackDelete img {
+        filter: brightness(100%)
+    }
+
+    div .categoryFlex {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .mainPageFlex {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .savedFlex {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
