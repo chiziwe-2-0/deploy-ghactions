@@ -16,7 +16,7 @@ app.get('/flex', function(req, res) {
 });
 
 
-app.get("/grid", function(request, response){
+app.get('/grid', function(req, res){
   res.sendFile(path.join(__dirname, 'styles/indexGrid.html'));
 });
 
