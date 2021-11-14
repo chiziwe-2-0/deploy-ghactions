@@ -1,6 +1,6 @@
 {
     "routes": {
-      "/*.html": "index.html",
+      "/*.html": "src/index.html",
       "/grid/**": "src/indexGrid.html",
       "/flex/**": "src/indexFlex.html"
     },
