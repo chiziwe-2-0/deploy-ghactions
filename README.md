@@ -4,4 +4,4 @@
 
 Created By: Олимпиев Никита, P42072
 
-Heroku Deploy: https://deploy-css.herokuapp.com/
+Heroku Deploy: https://deploy-css.herokuapp.com/index.html
