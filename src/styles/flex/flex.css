@@ -81,7 +81,7 @@ header {
     }
 
     .logoutFlex {
-        background-color: #fff;
+        background: #FFFFFF;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -100,6 +100,32 @@ header {
     .logout img {
         margin-left: 5px;
     }
+   
+
+    .burgerFlex {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+
+    .burgerFlex {
+        display: flex;
+        background: #FFFFFF;
+        border: none;    }
+
+    .logoutFlex {
+        display: none;
+    }
+
+    .mainPageFlex {
+        display: none;
+    }
+
+    .savedFlex {
+        display: none;
+    }
+
+}
 
 /* Middle Section */
 
