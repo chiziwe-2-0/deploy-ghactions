@@ -10,12 +10,12 @@ app.get("/", function(request, response){
 });
 
 app.get('/flex', function(req, res) {
-  res.sendFile(path.join(__dirname, 'styles/indexFlex.html'));
+    res.sendFile(path.join(__dirname, 'styles/indexFlex.html'));
 });
 
 
 app.get('/grid', function(req, res){
-  res.sendFile(path.join(__dirname, 'styles/indexGrid.html'));
+    res.sendFile(path.join(__dirname, 'styles/indexGrid.html'));
 });
 
 app.listen(process.env.PORT || 3000);
