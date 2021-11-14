@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const express = require("express");
 const app = express();
 
@@ -9,14 +11,13 @@ app.get("/", function(request, response){
     response.send("styles/index.html");
 });
 
-app.get("/flex", function(request, response){
-     
-  response.send("styles/indexFlex.html");
+app.get('/flex', function(req, res) {
+  res.sendFile(path.join(__dirname, 'styles/indexFlex.html'));
 });
 
+
 app.get("/grid", function(request, response){
-     
-  response.send("styles/indexGrid.html");
+  res.sendFile(path.join(__dirname, 'styles/indexGrid.html'));
 });
 
 app.listen(process.env.PORT || 3000);
