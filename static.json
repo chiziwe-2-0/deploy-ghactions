@@ -1,0 +1,27 @@
+{
+    "routes": {
+      "/*.html": "index.html",
+      "/grid/**": "src/indexGrid.html",
+      "/flex/**": "src/indexFlex.html"
+    },
+  
+   "headers": {
+  
+    "/" : {
+      "X-Author": "Olimpiev Nikita",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/grid/**": {
+        "X-Author": "Olimpiev Nikita",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Access-Control-Allow-Origin": "*"
+    },
+
+    "/flex/**": {
+      "X-Author": "Olimpiev Nikita",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    }
+   }
+  }
