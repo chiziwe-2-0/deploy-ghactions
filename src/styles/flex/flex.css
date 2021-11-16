@@ -1,3 +1,12 @@
+/** ПОДУМАТЬ О БУРГЕРЕ */
+.cardFlexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+изменить тегм природы
+
 * {
     padding: 0;
     margin: 0;
