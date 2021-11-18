@@ -1,3 +1,7 @@
+/*  padding устанавливает внутренние отступы/поля со всех сторон элемента
+    cвойство margin CSS определяет внешний отступ на всех четырёх сторонах элемента
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +34,7 @@ header {
     background: #FFFFFF;
     box-shadow: inset 0px -1px 0px #D1D2D6;
 }
-
+    /* CSS свойство justify-content определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси flex контейнера */
     .headerFlex {
         display: flex;
         justify-content: space-between;
@@ -38,7 +42,7 @@ header {
         height: 80px;
         width: 100%;
     }
-
+    /* CSS свойство align-items выравнивает flex-элементы текущей flex-линии таким же образом, как и justify-content, но в перпендикулярном направлении. */
     .logoFlex {
         font-family: Roboto Slab;
         font-style: normal;
@@ -161,8 +165,6 @@ header {
     border-radius: 16px;
 
     position: relative;
-
-
 }
 
 .cardFlexContainer .card:nth-child(3n-1) {

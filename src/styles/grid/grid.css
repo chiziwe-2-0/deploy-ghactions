@@ -12,6 +12,7 @@ a {
     color: #1A1B22;
     text-decoration: unset;
 }
+/* display: inline-block (position: relative) встают не то что не как надо, а спускаются вниз, и даже ниже нижней границы блока, в котором они находятся */
 
 li {
     display: inline-block;
@@ -143,7 +144,7 @@ header {
 .contentFlex {
     background: #F5F6F7;
     padding: 62px 7.22% 46px;
-
+    /* CSS-свойство grid-template-columns определяет имена линий и функции гибкости линий. grid columns */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -175,7 +176,7 @@ header {
     top: 24px;
     left: 24px;
     right: 24px;
-
+    /* CSS свойство justify-items производит выравнивание всех элементов макета */
     display: grid;
     grid-template-columns: 0fr 1fr;
     align-items: center;
