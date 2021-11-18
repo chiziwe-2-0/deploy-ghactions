@@ -1,12 +1,3 @@
-/** ПОДУМАТЬ О БУРГЕРЕ */
-.cardFlexContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-изменить тегм природы
-
 * {
     padding: 0;
     margin: 0;
@@ -320,58 +311,69 @@ header {
     display: flex;
 }
 
+
 /* Footer Section */
 
+footer {
+    padding: 0 7.22%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .footerText {
-    display: flex;
-    align-items: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height, or 137% */
-    /* simulator/gray/text */
     color: #B6BCBF;
+
+    margin-top: 32px;
+    margin-bottom: 26px;
 }
-    .menuFlex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    .mainPageFlex {
-        font-family: Roboto;
-        display: flex;
-        height: 80px;
-        align-items: center;
-        margin-right: 34px;
-        font-family: Roboto;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 500;
-        /* identical to box height, or 133% */
-        text-align: center;
-        /* main/primary */
-        color: #1A1B22;
-    }
+.menuFlex {
+    display: inline-block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
-    .savedFlex {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-        height: 80px;
-        /* identical to box height, or 133% */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin-right: 32px;
-        /* main/primary */
-        color: #1A1B22;
-    }
+.navLink {
+    display: inline-block;
+}
+
+.navLink a {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.navLink a:first-child {
+    width: 112px;
+}
+
+.navLink a:last-child {
+    width: 192px;
+}
+
+.navSoc {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navSoc a:first-child {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.mob-btn {
+    display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -491,4 +493,31 @@ header {
         display: flex;
         flex-wrap: wrap;
     }
+
+
+    .footerText {
+        margin-top: 40px;
+        margin-bottom: initial;
+        grid-row: 2;
+    }
+
+    .menuFlex {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .navLink a {
+        text-align: left;
+        line-height: 48px;
+    }
+
+    .navSoc {
+        margin-left: auto;
+    }
+
+    footer {
+        padding: 20px 16px;
+        grid-template-columns: 100%;
+    }
+
 }

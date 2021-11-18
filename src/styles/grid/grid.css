@@ -386,6 +386,11 @@ footer {
         margin-bottom: 10px;
     }
 
+    .burger {
+        display: initial;
+        margin-left: auto;
+    }
+
     .cardFlexContainer:nth-child(3n-1) {
         margin-left: initial;
         margin-right: initial;
